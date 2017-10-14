@@ -7,7 +7,7 @@ import java.io.*;			//handles input output
 import java.util.*;			//utilities like Scanner
 import java.text.*;			//
 import java.math.*;			//
-import java.util.regex.*;	//
+import java.util.regex.*;	//parent of util, includes Matcher and Pattern
 
 java arguments ->
 	Scanner scan = new Scanner(System.in)
@@ -113,7 +113,7 @@ String methods
 	.toLowerCase()			//string.toLowerCase()
 	toUpperCase()
 	.trim()					//string.trim() removes spaces before and after
-	valueOf()
+	.valueOf()
 
 BigInteger methods		//BigInteger is an integer bigger than long
 	.add()				// a.add(b) -> return a+b
@@ -124,3 +124,10 @@ sum = sum.add(BigInteger.valueOf(i)); // sum += i
 
 Array methods
 	.length				//gets length of array
+
+java.util.regex.Matcher
+	.matches()			// str.matches(str.substr)	returns true or false
+	.matcher()			// str.matcher(input)	
+	.group()			// array of of input that passess matcher
+java.util.regex.Pattern
+	Pattern varName = Pattern.compile(string, Pattern.CASE_INSENSITIVE)
